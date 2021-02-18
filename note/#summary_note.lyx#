@@ -1,0 +1,393 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+%\numberwithin{equation}{section}
+%\numberwithin{section}{part}
+
+\usepackage{kotex}
+\setmainhangulfont{Noto Serif CJK KR}
+\setsanshangulfont{Noto Sans CJK KR}
+
+\renewcommand\qedsymbol{$\blacksquare$}
+\DeclareMathOperator*{\argmin}{arg\,min} % thin space, limits underneath in displays
+\DeclareMathOperator*{\argmax}{arg\,max} % thin space, limits underneath in displays
+\DeclareMathOperator*{\intr}{int}
+\DeclareMathOperator*{\epi}{epi}
+\DeclareMathOperator*{\co}{co}
+\DeclareMathOperator*{\cl}{cl}
+\DeclareMathOperator*{\ext}{ext}
+\DeclareMathOperator*{\Var}{Var}
+\DeclareMathOperator*{\Cov}{Cov}
+
+\lhead{Daily Memo} 
+\chead{Roh}
+\rhead{UChicago}
+\cfoot{- \thepage \space-}
+\renewcommand{\headrulewidth}{0.4pt}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+theorems-sec-bytype
+customHeadersFooters
+\end_modules
+\maintain_unincluded_children false
+\language british
+\language_package 
+\inputencoding auto
+\fontencoding global
+\font_roman "cochineal" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\boxbgcolor #e6e6e6
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1.5cm
+\topmargin 2.5cm
+\rightmargin 1.5cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style british
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\bullet 2 0 0 -1
+\bullet 3 1 0 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+데이터베이스 정리
+\end_layout
+
+\begin_layout Standard
+노현우
+\end_layout
+
+\begin_layout Subsubsection*
+Week1
+\end_layout
+
+\begin_layout Standard
+데이터베이스: 특정 조직의 여러 사용자가 공유하여 사용할 수 있도록 통합해서 저장한 운영 데이터의 집합
+\end_layout
+
+\begin_layout Itemize
+통합 데이터
+\end_layout
+
+\begin_layout Itemize
+저장 데이터
+\end_layout
+
+\begin_layout Itemize
+공유 데이터
+\end_layout
+
+\begin_layout Itemize
+운영 데이터
+\end_layout
+
+\begin_layout Standard
+데이터베이스의 특성
+\end_layout
+
+\begin_layout Itemize
+Real-time accessibility
+\end_layout
+
+\begin_layout Itemize
+Continuous evolution
+\end_layout
+
+\begin_layout Itemize
+Contents reference
+\end_layout
+
+\begin_layout Itemize
+Concurrent sharing
+\end_layout
+
+\begin_layout Standard
+데이터 베이스 관리 시스템 (DMMS)
+\end_layout
+
+\begin_layout Itemize
+파일 시스템의 문제를 해결하기 위해 제시된 소프트웨어
+\end_layout
+
+\begin_layout Itemize
+조직에 필요한 데이터를 데이터베이스에 통합하여 저장하고 관리함
+\end_layout
+
+\begin_layout Standard
+다양한 기능
+\end_layout
+
+\begin_layout Itemize
+정의 기능
+\end_layout
+
+\begin_layout Itemize
+조작 기능
+\end_layout
+
+\begin_layout Itemize
+제어 기능
+\end_layout
+
+\begin_layout Subsubsection*
+Week2
+\end_layout
+
+\begin_layout Standard
+스키마와 인스턴스
+\end_layout
+
+\begin_layout Itemize
+스키마
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+데이터베이스에 저장되는 데이터 구조와 제약조건을 정의한것
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+인스턴스
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+스키마에 따라 데이터베이스에 실제로 저장된 값
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+데이터 베이스의 구조
+\end_layout
+
+\begin_layout Itemize
+3단계 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+외부단계: 사용자, 응용 프로그래머의 관점
+\end_layout
+
+\begin_layout Itemize
+개념단계: 데이터베이스 관리자의 관점
+\end_layout
+
+\begin_layout Itemize
+내부단계: 시스템 프로그래머의 관점
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename 화면 캡처 2021-02-18 062223.png
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+데이터 관리 시스템 구성
+\end_layout
+
+\begin_layout Itemize
+질의 처리기 (Query processor)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+사용자의 데이터 처리 요구를 해석하여 처리
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+저장 데이터 관리자
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+디스크에 저장된 사용자 데이터베이스와 데이터 사전을 관리하고, 여기에실제로 접근하는 역할을 담당
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Week3
+\end_layout
+
+\begin_layout Standard
+개체 관계 모델의 구성요소
+\end_layout
+
+\begin_layout Itemize
+개체 관계 모델 (E-R model; Entity - Relationship model)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+개체와 개체 간의 관계를 이용해 현실 세계를 개념적 구조로 표현
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+개체 관계 다이어 그램 (E-R diagram)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+개체 관계 모델을 이용해 현실 세계를 개념적으로 모델링 한 결과물을 그림으로 표현한 것
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+개체 (Entity)
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+저장할 가치가 있는 중요 데이터를 가지고 있는 사람이나 사물, 개념, 사건
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Student, 고객
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+속성 (Attribute)
+\end_layout
+
+\begin_layout Itemize
+개체나 관계가 가지고 있는 고유의 특성
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+학생: Name, gpa, grade
+\end_layout
+
+\begin_layout Itemize
+고객: 고객명, 고객id
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Primary Key
+\end_layout
+
+\begin_layout Itemize
+An attribute(s) that uniquely identify an entry in the database table
+\end_layout
+
+\begin_layout Itemize
+
+\bar under
+student_id
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
